@@ -1,3 +1,3 @@
 # SolidityRemix
 
-Connecting with Machine
+Tutorials on Solidity using RemixIDE
