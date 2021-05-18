@@ -2,16 +2,12 @@ pragma solidity ^0.5.0;
 
 contract IntOverUnder {
 
- //   using SafeMath for uint256;
-    address public owner = msg.sender;
-    uint public counter = 0;
+    uint256 public total;
 
 //   uint256: between 0 and 115792089237316195423570985008687907853269984665640564039457584007913129639935 (2^256-1)
-   function intIncrement(uint constNum) public {
-      counter += constNum;
+   function unsafeAdd(uint256 var1, uint256 var2) public {
+       total = var1 + var2;
    }
 
-   function intDecrement(uint constNum) public {
-      counter -= constNum;
-   }
+// e.g., adding 115792089237316195423570985008687907853269984665640564039457584007913129639935 and 6 will result in 5.
 }
